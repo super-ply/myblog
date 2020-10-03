@@ -1,0 +1,46 @@
+.brz.single-product,
+[data-structure="brizy:wide:normal"],
+[data-structure="brizy:wide:narrow"] {
+
+	.ct-builder-content {
+		width: 100vw;
+		margin-left: calc( -50vw + 50%);
+		margin-right: calc( -50vw + 50%);
+	}
+
+	.brz-section--boxed {
+		.brz-container,
+		.brz-container__wrap {
+			width: var(--containerWidth) !important;
+			max-width: var(--maxSiteWidth) !important;
+		}
+	}
+
+	.brz-ed-wrap-block-wrap--first {
+		height: 500px !important;
+	}
+}
+
+
+// reset options
+.brz-ed {
+
+	// input option
+	.brz-input[class*="brz-ed-control"] {
+		border: none !important;
+		border-radius: 4px !important;
+	}
+
+	[class*="brz-ed-control"] > input,
+	.brz-input[class*="multi-input"],
+	.brz-ed-option__input-number-wrap .brz-input,
+	.brz-ed-control__number-unit__input .brz-input,
+	.brz-ed-option__multi-input-container .brz-input {
+		min-height: initial !important;
+	}
+}
+
+
+.brz-menu {
+	--listItemSpacing: 0;
+}

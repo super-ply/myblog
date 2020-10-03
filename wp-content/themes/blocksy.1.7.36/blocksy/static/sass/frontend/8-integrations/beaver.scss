@@ -1,0 +1,10 @@
+[data-structure="beaver:wide:normal"],
+[data-structure="beaver:wide:narrow"] {
+
+	.ct-builder-content {
+		width: 100vw;
+		margin-left: calc( -50vw + 50%);
+		margin-right: calc( -50vw + 50%);
+	}
+
+}

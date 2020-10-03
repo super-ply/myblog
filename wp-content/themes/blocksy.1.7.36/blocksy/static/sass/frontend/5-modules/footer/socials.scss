@@ -1,0 +1,13 @@
+[data-column="socials"] {
+	display: flex;
+	align-items: var(--vertical-alignment);
+	justify-content: var(--horizontal-alignment);
+}
+
+.ct-footer-socials {
+	margin: var(--margin);
+
+	ul {
+		justify-content: var(--alignment);
+	}
+}

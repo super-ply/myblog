@@ -1,0 +1,18 @@
+// shape size
+[data-type="square"],
+[data-type="rounded"] {
+	.ct-icon-container {
+		width: calc(var(--icon-size) * 2.5);
+		height: calc(var(--icon-size) * 2.5);
+	}
+}
+
+
+// shape type
+[data-type="square"] {
+	--border-radius: 2px;
+}
+
+[data-type="rounded"] {
+	--border-radius: 100%;
+}

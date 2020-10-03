@@ -1,0 +1,62 @@
+.ct-passepartout {
+	padding: var(--frame-size, 0px);
+
+	&:before, &:after {
+		position: fixed;
+		content: '';
+		z-index: 99999;
+		left: 0;
+		width: 100%;
+		height: var(--frame-size, 0px);
+		background: var(--passepartoutColor);
+	}
+
+	&:before {
+		top: 0;
+	}
+
+	&:after {
+		bottom: 0;
+	}
+
+	#main-container {
+		min-height: calc(100vh - var(--frame-size, 0px) * 2);
+
+		&:before, &:after {
+			position: fixed;
+			content: '';
+			z-index: 99999;
+			width: var(--frame-size, 0px);
+			height: 100%;
+			background: var(--passepartoutColor);
+		}
+
+		&:before {
+			left: 0;
+		}
+
+		&:after {
+			right: 0;
+		}
+	}
+}
+
+
+// integrations
+.ct-passepartout {
+
+	.demo_store,
+	.ct-floating-bar,
+	[data-sticky*='yes'] {
+		left: var(--frame-size, 0px);
+		right: var(--frame-size, 0px);
+	}
+
+	.demo_store[data-position="top"] {
+		top: var(--frame-size, 0px);
+	}
+
+	.demo_store[data-position="bottom"] {
+		bottom: var(--frame-size, 0px);
+	}
+}

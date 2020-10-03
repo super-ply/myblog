@@ -1,0 +1,11 @@
+.hero-section[data-type="type-1"] {
+	text-align: var(--alignment, left);
+	
+	@include media-breakpoint-down (md) {
+		margin-bottom: 30px;
+	}
+
+	@include media-breakpoint-up (lg) {
+		margin-bottom: 50px;
+	}
+}

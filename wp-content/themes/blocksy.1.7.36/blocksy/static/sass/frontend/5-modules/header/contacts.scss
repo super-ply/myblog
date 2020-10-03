@@ -1,0 +1,18 @@
+.ct-contact-info {
+
+	ul {
+		--listIndent: 0;
+		--listItemSpacing: 0;
+		--listStyleType: none;
+
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+
+		li {		
+			&:not(:last-child) {
+				margin-right: var(--items-spacing);
+			}
+		}
+	}
+}

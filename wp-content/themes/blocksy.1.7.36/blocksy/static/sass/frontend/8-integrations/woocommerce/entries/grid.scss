@@ -1,0 +1,28 @@
+[data-products] {
+	display: grid;
+	grid-template-columns: var(--shopColumns);
+	grid-column-gap: var(--cardsGap);
+
+
+	@include media-breakpoint-up (lg) {
+		&.columns-2 {
+			--shopColumns: repeat(2, 1fr);
+		}
+
+		&.columns-3 {
+			--shopColumns: repeat(3, 1fr);
+		}
+
+		&.columns-4 {
+			--shopColumns: repeat(4, 1fr);
+		}
+
+		&.columns-5 {
+			--shopColumns: repeat(5, 1fr);
+		}
+
+		&.columns-6 {
+			--shopColumns: repeat(6, 1fr);
+		}
+	}
+}

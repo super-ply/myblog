@@ -1,0 +1,11 @@
+.ct-header-divider {
+	display: flex;
+	align-items: center;
+	height: var(--height);
+
+	span {
+		width: var(--width, 1px);
+		height: var(--divider-height);
+		background: var(--background-color, #ddd);
+	}
+}

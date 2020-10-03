@@ -1,0 +1,48 @@
+.ct-product-view {
+	position: relative;
+}
+
+.ct-lightbox-trigger {
+	display: flex;
+	position: absolute;
+	z-index: 2;
+	top: 20px;
+	right: 20px;
+	padding: 12px;
+	cursor: pointer;
+	transition: color 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #fff;
+		border-radius: 100%;
+		transition: background 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+					transform 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+	}
+
+	svg {
+		position: relative;
+		z-index: 1;
+		fill: currentColor;
+	}
+
+	&:hover {
+		color: #fff;
+
+		&:before {
+			background: var(--paletteColor1);
+			transform: scale3d(1.1, 1.1, 1);
+		}
+	}
+}
+
+// popup
+.woocommerce .pswp__bg, 
+.woocommerce-page .pswp__bg {
+	opacity: 0.7 !important;
+}
